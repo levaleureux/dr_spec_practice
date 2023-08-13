@@ -1,8 +1,9 @@
 require "app/component/score.rb"
+require "app/component/ball.rb"
 
 class Game
   attr_gtk
-  #attr_sprite
+
   attr_accessor :point
 
   def initialize args

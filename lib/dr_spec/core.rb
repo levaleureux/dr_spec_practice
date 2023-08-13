@@ -51,7 +51,10 @@ def after &block
 end
 
 def it(message, &block)
-  @current_context[:tests] << { description: message, block: block }
+  if block == nil
+    block = Proc.new { |args, assert| }
+  end
+  @current_context[:tests] << { description:  message, block:  block }
 end
 
 def xit message, &block
