@@ -1,18 +1,24 @@
 class Ball
   attr_gtk
   attr_sprite
-  attr_accessor :point, :dx, :dy, :alive
+  attr_accessor :dx, :dy, :alive
 
   MAX_Y = 700
   MAX_X = 1280
 
   def initialize args
     self.args = args
-    @point    = 20
     @dx       = 2
     @dy       = 2
     @speed    = 20
     @alive    = true
+  end
+
+  def reset
+    @x = 0
+    @x = 1
+    # TODO random direction
+    @alive = true
   end
 
   def tick
