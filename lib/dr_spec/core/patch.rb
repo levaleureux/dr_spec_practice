@@ -136,7 +136,7 @@ S
       #self.passed.each { |h| log "**** :#{h[:m]}" }
       self.passed.each_with_index { |h,index| log " #{' ' if index < 9} #{index + 1} ✅ #{h[:m].to_s.split('_').drop(1).join('_') }".green }
       #log "*** Inconclusive"
-      if self.inconclusive.length > 0
+      if false # self.inconclusive.length > 0
         log_once :assertion_ok_note, <<-S
 NOTE FOR INCONCLUSIVE TESTS: No assertion was performed in the test.
 Add assert.ok! at the end of the test if you are using your own assertions.

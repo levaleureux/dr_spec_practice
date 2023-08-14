@@ -17,7 +17,7 @@ end
 class BeFalsyMatcher < CoreMatcher
   def positive_match? actual
     [
-      !actual,
+      false == !!actual,
       "#{actual} is not falsy. #{@fail_with}"
     ]
   end
