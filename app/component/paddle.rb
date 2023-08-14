@@ -30,7 +30,7 @@ class Paddle
   end
 
   def min_y
-    MIN_Y
+    0
   end
 
   private
