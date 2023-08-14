@@ -1,5 +1,6 @@
 require "app/component/score.rb"
 require "app/component/ball.rb"
+require "app/component/paddle.rb"
 
 class Game
   attr_gtk
