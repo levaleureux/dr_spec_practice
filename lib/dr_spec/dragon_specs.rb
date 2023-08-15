@@ -53,4 +53,5 @@ require 'lib/dr_spec/core/patch.rb'
 
 require "spec/ball_spec.rb"
 require "spec/paddle_spec.rb"
+require "spec/game_spec.rb"
 require "spec/main_spec.rb"
