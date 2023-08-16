@@ -23,7 +23,7 @@ spec "paddle" do
     expect(@paddle.y).to eq @paddle.max_y
   end
   it "have a max down" do
-    @paddle.y = @paddle.max_y - 15
+    @paddle.y = 15
     @paddle.move_down
     @paddle.move_down
     @paddle.tick

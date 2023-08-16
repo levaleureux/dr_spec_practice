@@ -1,7 +1,7 @@
 class Ball
   attr_gtk
   attr_sprite
-  attr_accessor :point, :dx, :dy, :alive
+  attr_accessor :dx, :dy, :alive
 
   MAX_Y =  720
   MAX_X = 1280
@@ -44,7 +44,7 @@ class Ball
 
   def max_x ; MAX_X end
 
-  def may_y ; MAY_Y end
+  def max_y ; MAX_Y end
 
   def check_bounce_top_wall
     if @y > max_y
