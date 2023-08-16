@@ -4,6 +4,7 @@ class Paddle
   attr_accessor :speed
 
   MAX_Y = 700
+  MIN_Y = 0
 
   def initialize args
     self.args = args
